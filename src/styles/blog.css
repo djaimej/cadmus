@@ -1,0 +1,10 @@
+.posts {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+
+a.post {
+    display: flex;
+    gap: 1rem;
+}
