@@ -1,25 +1,31 @@
 ---
 layout: ../../layouts/MarkdownPostLayout.astro
-title: 'My First Blog Post'
-pubDate: 2022-07-01
-description: 'This is the first post of my new Astro blog.'
-author: 'Astro Learner'
+title: 'Notas, frases y lo que sea'
+pubDate: 16/04/2025
+description: 'Algunas cosas sin mucho sentido que se me han ocurrido'
+author: 'Diego Jaime'
 image:
-    url: 'https://docs.astro.build/assets/rose.webp'
+    url: '/src/assets/images/mind.jpg'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
+<br>
 
-Welcome to my _new blog_ about learning Astro! Here, I will share my learning journey as I build a new website.
+**Reflexiones sobre la percepción y el comportamiento**
 
-## What I've accomplished
+- La combinación de tentación, oportunidad y bajo riesgo desafía el control de impulsos primitivos.
+- A veces es difícil ser consciente de cómo uno se proyecta hacia los demás y evitar que sea algo negativo, lo mejor que se puede hacer en esos casos es guardar silencio.
+<br>
+<br>
 
-1. **Installing Astro**: First, I created a new Astro project and set up my online accounts.
+**Relaciones y patrones**
 
-2. **Making Pages**: I then learned how to make pages by creating new `.astro` files and placing them in the `src/pages/` folder.
+- Al ser humano le gusta establecer relaciones, en caso de que estas relaciones se mantengan en estructuras que puedan ser tangibles o percibidas, dichas relaciones formarían patrones, los cuales, podrían describir como interactúan los elementos en dicha relación.
+- Fenómenos observados que sostienen cierta simetría o sincronicidad, pueden ser producto de "entidades" relacionadas con el ser sensible que observa el fenómeno.
+<br>
+<br>
 
-3. **Making Blog Posts**: This is my first blog post! I now have Astro pages and Markdown posts!
+**Percepciones y juicios**
 
-## What's next
-
-I will finish the Astro tutorial, and then keep adding more posts. Watch this space for more to come.
+- Es complicado juzgar a alguien en una prueba donde tiene libertad total de acción.
+- Los sesgos cognitivos crean falacias; Se necesita una "conciencia colectiva" para llegar a una verdad o acuerdo.

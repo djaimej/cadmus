@@ -1,13 +1,19 @@
 :root {
     --black: #000;
-    --dark: #222;
-    --dark-blur: #222c;
+    --dark: #1a1a1a;
+    --dark-blur: #101010cc;
     --white: #fff;
-    --light: #ddd;
-    --light-blur: #dddc;
+    --light: #e6e6e6;
+    --light-blur: #e6e6e6cc;
     --primary: #86002F;
     --secondary: #2F8600;
     --tertiary: #002F86;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
 }
 
 html {
@@ -20,20 +26,10 @@ html {
 }
 
 body {
-    margin: 0 auto;
+    margin: 0;
     overflow-y: auto;
     overflow-x: hidden;
-    width: 100%;
-    padding: 1rem;
-    line-height: 1.5;
-    background-color: var(--dark);
-    color: var(--white);
-}
-
-* {
-    box-sizing: border-box;
-    margin: 0;
-    padding: 0;
+    width: 100vw;
 }
 
 @font-face {
@@ -72,22 +68,22 @@ body {
 }
 
 h1 {
-    font-size: 6rem;
+    font-size: clamp(2.2rem, calc(8vw + 1rem), 6rem);
     font-weight: 600;
 }
 
 h2 {
-    font-size: 5rem;
+    font-size: clamp(1.8rem, calc(7vw + 1rem), 5rem);
     font-weight: 600;
 }
 
 h3 {
-    font-size: 4rem;
+    font-size: clamp(1.4rem, calc(6vw + 1rem), 4rem);
     font-weight: 400;
 }
 
 h4 {
-    font-size: 3rem;
+    font-size: clamp(1rem, calc(5vw + 1rem), 3rem);
     font-weight: 400;
 }
 
@@ -102,6 +98,12 @@ b {
 }
 
 p {
+    font-size: 2rem;
+    font-weight: 400;
+    line-break: auto;
+}
+
+strong {
     font-size: 2rem;
     font-weight: 400;
 }
@@ -122,6 +124,7 @@ a {
     line-break: anywhere;
     font-size: 1em;
     background-color: transparent;
+    text-decoration: none;
 }
 
 abbr[title] {
@@ -216,8 +219,22 @@ section {
     display: none;
 }
 
-.txt-center {
+::-moz-selection { /* Code for Firefox */
+    color: var(--black);
+    background: var(--light);
+}
+
+::selection {
+    color: var(--black);
+    background: var(--light);
+}
+
+.text-center {
     text-align: center;
+}
+
+.text-end {
+    text-align: end;
 }
 
 .txt-justify {
@@ -454,11 +471,6 @@ section {
     border-style: none;
 }
 
-h1 {
-    margin: 1rem 0;
-    font-size: 2.5rem;
-}
-
 header {
     position: fixed;
     /* Set the navbar to fixed position */
@@ -471,11 +483,12 @@ header {
 main {
     min-height: 70dvh;
     padding: min(7rem, 8%);
+    padding-top: 80px;
 }
 
 footer {
     width: auto;
-    padding: 3rem 1rem;
+    padding: 4rem 1rem;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -495,10 +508,19 @@ footer {
     margin-left: 0.5rem;
 }
 
+.dark .fill-icon {
+    fill: #FFF;
+}
+
+.light .fill-icon {
+    fill: #000;
+}
+
 .dark,
 .dark * {
     background: var(--dark);
     color: var(--white);
+    transition: 0.5s;
 }
 
 .dark.blur *,
@@ -520,6 +542,7 @@ footer {
 .light * {
     background: var(--light);
     color: var(--black);
+    transition: 0.5s;
 }
 
 .color-btn {
@@ -527,6 +550,14 @@ footer {
     height: 2rem;
     border-radius: 100%;
     cursor: pointer;
+}
+
+.color-btn.dark {
+    background-color: var(--white);
+}
+
+.color-btn.light {
+    background-color: var(--black);
 }
 
 .nav-item {
@@ -549,22 +580,37 @@ footer {
     font-weight: bold;
 }
 
-.navbar-menu svg {
-    width: 3rem;
-    height: 3rem;
-    position: relative;
-}
-
 .navbar-menu {
     display: flex;
     justify-content: flex-end;
     padding: 1rem;
 }
 
+.navbar-menu svg {
+    position: relative;
+    width: 3rem;
+    height: 3rem;
+}
+
+.dark .navbar-menu svg {
+    fill: #FFF;
+}
+
+.dark .navbar-menu svg line {
+    stroke: #FFF;
+}
+
+.light .navbar-menu svg {
+    fill: #000;
+}
+
+.light .navbar-menu svg line {
+    stroke: #000;
+}
+
 /* MEDIA */
 
 @media (max-width: 512px) {
-
     header {
         padding: 1rem 1rem 2rem;
     }
@@ -581,32 +627,27 @@ footer {
     .navbar-nav {
         height: 0px;
         opacity: 0;
-        transition-duration: 0.5s;
     }
     .navbar-nav .nav-item {
+        display: none;
         opacity: 0;
     }
 
     .navbar-nav.open {
-        height: 9rem;
+        height: 5rem;
         opacity: 1;
-        transition-duration: 0.5s;
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
     .navbar-nav.open .nav-item {
+        display: block;
         opacity: 1;
-    }
-
-    main {
-        margin-top: 4rem;
     }
 }
 
 @media (min-width: 512px) {
-
     header {
         padding: 2rem;
     }
@@ -627,6 +668,5 @@ footer {
         display: flex;
         justify-content: center;
         gap: 2rem;
-        transition-duration: 0.3s;
     }
 }
