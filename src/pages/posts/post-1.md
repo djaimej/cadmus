@@ -5,7 +5,7 @@ pubDate: 16/04/2025
 description: 'Algunas cosas sin mucho sentido que se me han ocurrido'
 author: 'Diego Jaime'
 image:
-    url: '/src/assets/images/mind.jpg'
+    url: '../assets/images/mind.jpg'
     alt: 'The Astro logo on a dark background with a pink glow.'
 tags: ["astro", "blogging", "learning in public"]
 ---
