@@ -127,6 +127,10 @@ a {
     text-decoration: none;
 }
 
+a.social {
+    padding: 0.5em;
+}
+
 abbr[title] {
     border-bottom: 0;
     text-decoration: underline dotted;
@@ -499,6 +503,7 @@ footer {
     align-items: center;
     justify-content: center;
     margin-top: 1rem;
+    gap: 0.5em;
 }
 
 .icons svg {
