@@ -15,14 +15,15 @@ const { current } = Astro.props;
 		<link rel="icon" type="image/svg+xml" href="/favicon.svg" />
 		<meta name="viewport" content="width=device-width" />
 		<meta name="generator" content={Astro.generator} />
+		<meta name="description" content="Author: Diego Jaime">
 		<title>Diego</title>
 	</head>
 	<body class="dark">
 		<header class="dark">
 			<nav class="navbar">
-				<ul class="navbar-color">
-					<a title="theme" class="color-btn dark"></a>
-				</ul>
+				<div class="navbar-color">
+					<button title="theme" class="color-btn dark"></button>
+				</div>
 				<a class="navbar-menu">
 					<svg xmlns="http://www.w3.org/2000/svg" width="512" height="512" viewBox="0 0 512 512">
 					  <line x1="80" y1="160" x2="432" y2="160" style="fill:none;stroke-linecap:round;stroke-miterlimit:10;stroke-width:32px"/>
