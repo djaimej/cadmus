@@ -225,12 +225,12 @@ section {
 
 ::-moz-selection { /* Code for Firefox */
     color: var(--black);
-    background: var(--light);
+    background-color: var(--light);
 }
 
 ::selection {
     color: var(--black);
-    background: var(--light);
+    background-color: var(--light);
 }
 
 .text-center {
@@ -523,29 +523,29 @@ footer {
 
 .dark,
 .dark * {
-    background: var(--dark);
+    background-color: var(--dark);
     color: var(--white);
     transition: 0.5s;
 }
 
 .dark.blur *,
 .light.blur * {
-    background: transparent;
+    background-color: transparent;
 }
 
 .dark.blur {
-    background: var(--dark-blur) !important;
+    background-color: var(--dark-blur) !important;
     transition: linear 0.5s;
 }
 
 .light.blur {
-    background: var(--light-blur) !important;
+    background-color: var(--light-blur) !important;
     transition: linear 0.5s;
 }
 
 .light,
 .light * {
-    background: var(--light);
+    background-color: var(--light);
     color: var(--black);
     transition: 0.5s;
 }
