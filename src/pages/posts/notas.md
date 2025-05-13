@@ -6,8 +6,8 @@ description: 'Algunas cosas sin mucho sentido que se me han ocurrido'
 author: 'Diego Jaime'
 image:
     url: '/images/mind.jpg'
-    alt: 'The Astro logo on a dark background with a pink glow.'
-tags: ["astro", "blogging", "learning in public"]
+    alt: 'Mind'
+tags: ["mente", "pensamiento", "notas"]
 ---
 <br>
 
