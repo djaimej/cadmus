@@ -17,6 +17,11 @@ a.post img {
     height: auto;
 }
 
+a.post .description {
+    font-size: 0.75em;
+    opacity: 0.5;
+}
+
 .dark a.post .info .date {
     color: var(--light-blur);
     text-align: end;

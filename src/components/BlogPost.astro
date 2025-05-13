@@ -5,7 +5,7 @@ const { post } = Astro.props;
 <a href={post.url} class="post">
     <img src={post.frontmatter.image.url} width="300" alt={post.frontmatter.image.alt} />
     <div class="info">
-        <p><strong>{post.frontmatter.title}</strong> {post.frontmatter.description}</p>
+        <p><strong>{post.frontmatter.title}</strong><br><span class="description">{post.frontmatter.description}</span></p>
         <p class="date">{post.frontmatter.pubDate.toString().slice(0, 10)}</p>
     </div>
 </a>
