@@ -5,7 +5,7 @@ pubDate: 13/05/2025
 description: 'Análisis asintótico, recurrencias y ejemplos de cálculo de complejidad.'
 author: 'Diego Jaime'
 image:
-    url: '/images/nature.jpg'
+    url: '/images/big-o.png'
     alt: 'Nature'
 tags: ["algoritmo", "estudio", "computación", "ciencias"]
 ---
