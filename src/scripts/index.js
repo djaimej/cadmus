@@ -4,7 +4,7 @@ window.onload = () => {
         toggleTheme('dark');
     }
 
-    console.log('Version 1.0');
+    console.log('Version 1.1.0');
 }
 
 document.querySelector('.navbar-menu')?.addEventListener('click', () => {
