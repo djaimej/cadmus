@@ -1,10 +1,10 @@
 :root {
     --black: #000;
-    --dark: #1a1a1a;
-    --dark-blur: #101010cc;
+    --dark: rgb(15, 15, 15);
+    --dark-blur: #0f0f0fcc;
     --white: #fff;
-    --light: #e6e6e6;
-    --light-blur: #e6e6e6cc;
+    --light: #f0f0f0;
+    --light-blur: #f0f0f0cc;
     --primary: #86002F;
     --secondary: #2F8600;
     --tertiary: #002F86;
@@ -123,7 +123,6 @@ a {
     cursor: pointer;
     line-break: anywhere;
     font-size: 1em;
-    background-color: transparent;
     text-decoration: none;
 }
 
@@ -535,7 +534,7 @@ footer {
 .dark,
 .dark * {
     background-color: var(--dark);
-    color: var(--white);
+    color: var(--light);
     transition: 0.5s;
 }
 
@@ -557,7 +556,7 @@ footer {
 .light,
 .light * {
     background-color: var(--light);
-    color: var(--black);
+    color: var(--dark);
     transition: 0.5s;
 }
 
@@ -581,8 +580,12 @@ footer {
     list-style: none;
 }
 
-.nav-item .disabled {
-    color: var(--light);
+.dark .nav-item .disabled {
+    color: var(--light-blur);
+}
+
+.light .nav-item .disabled {
+    color: var(--light-blur);
 }
 
 .nav-link {
